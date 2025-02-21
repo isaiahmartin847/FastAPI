@@ -36,3 +36,33 @@ This project follows a specific folder structure to organize the codebase effect
 - **app/service/**init**.py**: Initializes the service package.
 - **app/service/user_service.py**: Contains user-related business logic.
 - **app/service/product_service.py**: Contains product-related business logic.
+
+## Getting Started
+
+To get the project up and running from scratch, follow these steps:
+
+1. **Create a virtual environment**:
+
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. **Activate the virtual environment**:
+
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. **Install the required packages**:
+
+   ```bash
+   pip install fastapi uvicorn
+   ```
+
+4. **Run the application**:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+
+Now you should be able to access the API at `http://127.0.0.1:8000`.
+If you go to the route `http://127.0.0.1:8000/docs` it will give you a UI for all the routes.
